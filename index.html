@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>[장난] 10억 도착 카카오톡 메시지</title>
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <style>
+            body {
+            text-align: center;
+            margin-top: 5rem;
+            }
+            button {
+            padding: 1rem 3rem;
+            font-size: 18px;
+            background-color: #fee500;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>💰🤑💲 10억 도착!? 💲🤑💰</h1>
+        <p>😆 친구에게 카카오톡 장난 메세지 보내기 😆</p>
+        <button onclick="sendMessage()">카카오톡으로 공유하기</button>
+
+        <script>
+            Kakao.init("자바스크립트 앱키");
+
+            function sendMessage() {
+            Kakao.Link.sendCustom({
+                templateId: 템플릿 ID
+            });
+            }
+        </script>
+        <!-- vscode 확장 파일 Live Server로 실행 -->
+        <!-- http://127.0.0.1:5500/index.html -->
+        <!-- https://sites.google.com/ -->
+    </body>
+</html>
